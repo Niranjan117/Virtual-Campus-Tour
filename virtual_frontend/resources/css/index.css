@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 90%;
+  width: 100%;
+  font-family: 'Raleway', sans-serif;
+  overflow: hidden;
+}
+
+body {
+  background-image: url('../images/college-1.avif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: #fff;
+}
+
+
+.container {
+  position: absolute;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 60px 80px;
+  border-radius: 20px;
+  backdrop-filter: blur(12px);
+  text-align: center;
+  box-shadow:rgba(0, 0, 0, 0.4);
+  transform: scale(0.8) translateY(0);
+  opacity: 0;
+  animation: zoomSlide 3s ease forwards;
+  }
+
+.container h1 {
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 15px;
+  
+}
+
+.container p {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 30x;
+}
+
+.btn {
+  padding: 14px 28px;
+  font-size: 18px;
+  border-radius: 10px;
+  border: none;
+  background-color: #ffd54f;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  animation: pulse 2s infinite;
+}
+
+.btn:hover {
+  background-color: #ffb300;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #ffd54f80;
+}
+
+/* Animation */
+@keyframes zoomSlide {
+  0% {
+    transform: scale(1) translateY(1px);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1) translateY(-60px); 
+    opacity: 1;
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.09);
+  }
+  
+}
+
