@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  font-family: 'Segoe UI', sans-serif;
+  background: #ffffff;
+}
+
+#container3D {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+header {
+  position: absolute;
+  top: 10px;
+  width: 100%;
+  text-align: center;
+  z-index: 2;
+}
+
+#title {
+  color: black;
+  font-size: 3em;
+  margin: 0;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: inline-block;
+  border-radius: 10px;
+}
+
+footer {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  z-index: 2;
+}
+
+#disclaimer {
+  font-size: 0.9em;
+  color: #333;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 8px;
+}

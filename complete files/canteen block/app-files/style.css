@@ -42,19 +42,6 @@ a, a:hover, a:active, a:visited {
   overflow: hidden;
 }
 
-#titleBar {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 40px;
-  height: 40px;
-  text-align: center;
-}
-
-.mobile #titleBar {
-  height: 50px;
-  right: 50px;
-}
 
 /* If there is a fullscreen button the title bar must make space for it */
 body.fullscreen-enabled #titleBar {
@@ -827,4 +814,21 @@ body.view-control-buttons .viewControlButton {
 }
 .viewControlButton-6 {
   margin-left: 105px;
+}
+/* Hide the sidebar and its toggle button */
+#sceneList,
+#sceneListToggle {
+  display: none !important;
+}
+
+/* Adjust title bar to use full width */
+#titleBar {
+  left: 0 !important;
+}
+
+/* If there’s mobile-specific positioning, override it too */
+@media (max-width: 600px) {
+  #titleBar {
+    left: 0 !important;
+  }
 }
